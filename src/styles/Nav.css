@@ -1,0 +1,111 @@
+body{
+    background-image: url('https://get.pxhere.com/photo/iphone-watch-hand-music-technology-leather-pen-equipment-money-office-wallet-bowtie-headphones-purse-sunglasses-glasses-case-accessories-gadgets-cell-men%27s-971375.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.text{
+    color:white;
+    align-items: center;
+    
+}
+.welcome{
+    font-family: 'Alegreya', serif;
+    font-size: 7ch;
+    margin-left:25vw;
+    margin-top: 15vw;
+}
+.studio{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10ch;
+    margin-left:10vw;
+   
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    background:transparent;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      width: 35vw;
+      
+  }
+  .menu-design{
+      color:white;
+      font-family: 'Comfortaa', cursive;
+      
+  }
+
+  .hamburger{
+      display:none
+  }
+  div.drop-menu, .drop-menu-open, .drop-menu-close  {
+    width:100vw;
+    height: 32vh;
+    background:rgb(94, 94, 94);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-1500px);
+    animation-direction: alternate;
+}
+.drop-menu-open {
+    display: block;
+    animation-name: open;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.drop-menu-close {
+    display: block;
+    animation: close .6s forwards linear ;
+}
+.bootstrap {
+    color:rgb(242, 196, 78);
+    font-family: 'Lobster', cursive;
+    font-size: 4ch;
+
+}
+@keyframes open {
+    to {
+        transform: translateY(92px);
+    }
+}
+@keyframes close {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-1500px);
+    }
+}
+
+img{
+    width:50px;
+    filter: invert(1);
+    cursor: pointer;
+}
+@media(max-width:1093px){
+    li{
+        display:none;
+    }
+    .hamburger {
+        display:block;
+    }
+    nav{
+        background-color:rgb(94, 94, 94);
+    }
+}
+
+
